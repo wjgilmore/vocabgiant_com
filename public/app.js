@@ -1,0 +1,1 @@
+console.error("Error: Parsing file /Users/wjgilmore/Software/dev.vocabgiant.com/src/App.jsx: Unexpected token (5:13)");
