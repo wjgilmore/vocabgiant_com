@@ -25,12 +25,19 @@
     "body-parser": "^1.12.4",
     "express": "^4.12.4",
     "react": "^0.13.3",
-    "react-bootstrap": "^0.23.2"
+    "react-bootstrap": "^0.23.2",
+    "react-router": "^0.13.3",
+    "reflux": "^0.2.8",
+    "superagent": "^1.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^3.1.17",
     "babelify": "^6.1.2",
     "browserify": "^10.2.3",
+    "eslint": "^0.23.0",
+    "eslint-plugin-react": "^2.5.2",
     "gulp": "^3.9.0",
+    "gulp-util": "^3.0.5",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.2.2"
   }

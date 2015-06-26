@@ -1,8 +1,8 @@
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var browserify = require('browserify');
 var babelify = require('babelify');
 var watchify = require('watchify');
-
 var source = require('vinyl-source-stream');
 
 function compiler(watch) {
@@ -11,21 +11,21 @@ function compiler(watch) {
 		entries: ['src/App.jsx'],
 		extensions: ['.jsx'],
 		debug: true,
-		cache: {}, // discuss this and the next two
-		packageCache: {}, 
-		fullPaths: true
-	});
+		cache: {},
+		packageCache: {}
+	}).transform(babelify);
 
-	function bundler() {
+	function rebundle() {
 		browsifier.bundle()
-		  .on('error', function(err) { console.error(err); this.emit('end'); })
+		  .on('error', function(err) { gutil.log(err); this.emit('end'); })
 	      .pipe(source('app.js'))
 	      .pipe(gulp.dest('public'));
 	}
 
   if (watch) {
-    bundler.on('update', function() {
-      console.log('-> bundling...');
+    var bundle = watchify(browsifier);
+    browsifier.on('update', function() {
+      gutil.log('Rebundling...');
       rebundle();
     });
   }
@@ -34,4 +34,9 @@ function compiler(watch) {
 
 }
 
-gulp.task('default', ['build']);
+function watch() {
+  return compiler(true);
+};
+ 
+gulp.task('build', function() { return compiler(); });
+gulp.task('watch', function() { return compiler(true); });

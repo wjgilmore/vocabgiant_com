@@ -1,5 +1,4 @@
-{
-    "words": [
+[
     {
     "origin": "accogliere",
     "translation": "to welcome"
@@ -40,5 +39,4 @@
     "origin": "tradurre",
     "translation": "to translate"
     }
-    ]
-}
+]
