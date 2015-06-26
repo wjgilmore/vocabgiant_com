@@ -19,6 +19,8 @@ var List = require('./components/List.jsx');
 
 var About = require('./components/About.jsx');
 
+var Item = require('./components/Item.jsx');
+
 
 var Home = React.createClass({
 
@@ -44,7 +46,7 @@ var routes = (
     <Route name="lists" handler={Home}/>
     <Route name="quiz" handler={Home}/>
     <Route name="about" handler={About}/>
-    <Route name="item" path="items/:id" handler={Home}/>
+    <Route name="item" path="items/:id" handler={Item}/>
     <DefaultRoute handler={Home}/>
   </Route>
 );
