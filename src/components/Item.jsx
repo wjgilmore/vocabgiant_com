@@ -3,6 +3,7 @@ var Reflux = require('reflux');
 
 var Router = require('react-router');
 var Link = Router.Link;
+var ListActions = require('../actions/ListActions');
 
 var Item = React.createClass({
 
@@ -16,9 +17,8 @@ var Item = React.createClass({
 
   componentDidMount: function () {
     var id = this.props.params.id;
-    // fetchMessage(id, function (err, message) {
-    //   this.setState({ message: message });
-    // })
+
+    ListActions.loadList(id);
 
     this.setState({ 
       name: id 
@@ -41,6 +41,3 @@ var Item = React.createClass({
 });
 
 module.exports = Item;
-
-            // <h4 className="list-group-item-heading">{this.props.item.origin}</h4>
-            // <p className="list-group-item-text">{this.props.item.translation}</p>

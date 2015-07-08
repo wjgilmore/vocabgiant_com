@@ -1,30 +1,30 @@
-"use strict";
-
 var React = require('react');
 var Reflux = require('reflux');
-var ListStore = require('../stores/ListStore');
 
-var ListItem = require('./ListItem.jsx')
- 
-var ListItems = React.createClass({
+var Router = require('react-router');
+var Link = Router.Link;
 
-  render: function() {
+var ListsStore = require('../stores/ListsStore.js');
 
-    var listItems = this.props.lists.map(function(item){
-      return <ListItem item={item} />;
-    });
+var List = React.createClass({
 
-    return (
-      <div>
-     <h1>Your Lists</h1>
-     <ul className="list-group">
-      {listItems}
-     </ul>
-     </div>
-    );
+	mixins: [Reflux.connect(ListsStore)],
 
-  }
+	componentDidMount: function() {
+		console.log('ID: ' + this.props.params.id);
+		ListActions.loadList(this.props.params.id);
+	},
 
+    render: function() {
+        return (
+          <Link to="list" params={{id: this.props.list._id}}>
+	          <li className="list-group-item">
+	            <h4 className="list-group-item-heading">{this.props.list.name}</h4>
+	            <p className="list-group-item-text">{this.props.list.language}</p>
+	          </li>
+          </Link>
+        );
+    }
 });
- 
-module.exports = ListItems;
+
+module.exports = List;
