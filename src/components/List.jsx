@@ -24,8 +24,8 @@ var List = React.createClass({
 	    var listItems = _.map(terms, function(term) {
 	      return <Link key={term.translation} to="list" params={{id: term.translation}}>
 	        <li className="list-group-item">
-	          <h4 className="list-group-item-heading">{term.translation}</h4>
-	          <p className="list-group-item-text">{term.origin}</p>
+	          <h4 className="list-group-item-heading">{term.origin}</h4>
+	          <p className="list-group-item-text">{term.translation}</p>
 	        </li>
 	      </Link>
 	    });
@@ -37,12 +37,16 @@ var List = React.createClass({
 
 		<div className="row button-bar">
 		<div className="col-sm-10 col-sm-offset-2">
-			<div className="btn-group btn-group-justified" role="group" aria-label="...">
+			<div className="btn-group btn-group-justified" role="group" aria-label="Review and Quiz">
 			<div className="btn-group" role="group">
-			    <a href="" className="btn btn-info" role="button">Review</a>
+				<Link className="btn btn-info" role="button" to="list.review" params={{id: this.props.params.id}}>
+			    Review
+			    </Link>
 			    </div>
 			    <div className="btn-group" role="group">
-			    <a href="" className="btn btn-info" role="button">Quiz</a>
+				<Link className="btn btn-info" role="button" to="list.quiz" params={{id: this.props.params.id}}>
+			    Quiz
+			    </Link>
 			    </div>
 		    </div>
 		    </div>

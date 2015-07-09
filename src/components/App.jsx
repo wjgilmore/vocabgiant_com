@@ -14,7 +14,7 @@ var RouteHandler = Router.RouteHandler;
 var App = React.createClass({
   render: function () {
     return (
-      <div>
+      <div className="container">
         <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
           <div className="container">
             <div className="navbar-header">
@@ -31,7 +31,6 @@ var App = React.createClass({
               <ul className="nav navbar-nav navbar-left">
 
                 <li><Link to="lists">Lists</Link></li>
-                <li><Link to="quiz">Pop Quiz</Link></li>
                 <li><Link to="about">About</Link></li>
 
               </ul>

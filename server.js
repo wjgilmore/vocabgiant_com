@@ -4,7 +4,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/dev_vocabgiant_com', function(err) {
+mongoose.connect(process.env.MONGOLAB_URI, function(err) {
     if(err) {
         console.log('MongoDB connection error', err);
     } else {
@@ -34,7 +34,6 @@ app.get('/', function(req, res) {
 
 app.get('/lists/:id', function(req, res) {
   return List.findById(req.params.id, function(err, list) {
-  	console.log(list);
     return res.send(list);
   });
 });

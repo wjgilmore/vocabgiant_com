@@ -6582,3 +6582,14 @@ h1 {
 .button-bar {
   padding: 5px;
 }
+
+.review-pane {
+  width: 100%;
+  height: 200px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
