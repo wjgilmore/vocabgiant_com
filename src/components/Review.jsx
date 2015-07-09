@@ -24,13 +24,12 @@ var Review = React.createClass({
 
         var divStyle = {
           textAlign: 'center',
-          height: '100%',
-          paddingTop: '10%'
+          marginTop: '50%'
         };
 
         var reviewItems = lo.map(terms, function(term) {
 
-          return <div key={term.origin} style={divStyle} className="col-md-12">
+          return <div key={term.origin} className="col-md-12">
               <h1 className="list-group-item-heading">{term.origin}</h1>
               <p className="list-group-item-text">{term.translation}</p>
             </div>
@@ -38,9 +37,11 @@ var Review = React.createClass({
         });
 
         return (
+            <div style={divStyle}>
             <ReactSwipe continuous={false}>
             {reviewItems}
             </ReactSwipe>
+            </div>
         );
 
     }

@@ -6593,3 +6593,7 @@ h1 {
     vertical-align: middle;
     float: none;
 }
+
+h1.list-group-item-heading {
+  font-size: 3em;
+}
