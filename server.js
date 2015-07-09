@@ -33,8 +33,9 @@ app.get('/', function(req, res) {
 });
 
 app.get('/lists/:id', function(req, res) {
-  return List.findById(req.params.id, function(err, lists) {
-    return res.send(lists);
+  return List.findById(req.params.id, function(err, list) {
+  	console.log(list);
+    return res.send(list);
   });
 });
 

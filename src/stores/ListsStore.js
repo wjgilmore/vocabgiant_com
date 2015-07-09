@@ -23,13 +23,12 @@ var ListsStore = Reflux.createStore({
   },
 
   onListCompleted: function(res) {
-    console.log("In onListCompleted");
     this.data.list = JSON.parse(res.text);
     this.trigger(this.data);
-  },
+  }
+  ,
 
   getInitialState: function() {
-    console.log(this.data);
     return this.data;
   }
 

@@ -9,10 +9,6 @@ var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 var RouteHandler = Router.RouteHandler;
 
-var ListActions = require('./actions/ListActions.js');
-
-var ListsStore = require('./stores/ListsStore');
-
 var App = require('./components/App.jsx');
 
 var Lists = require('./components/Lists.jsx');
@@ -25,17 +21,11 @@ var Item = require('./components/Item.jsx');
 
 var Home = React.createClass({
 
-	componentDidMount: function() {
-		ListActions.loadLists();
-	},
-
-	mixins: [Reflux.connect(ListsStore)],
-
     render: function() {
 
         return (
 	        <div>
-	        	<Lists lists={this.state.lists} />
+	        	<Lists/>
 	        </div>
         );
     }

@@ -6567,6 +6567,7 @@ div.col-md-12 {
 }
 h1 {
   padding-left: 5px;
+  font-size: 1.7em;
 }
 
 .action-call {
@@ -6576,4 +6577,8 @@ h1 {
 
 .list-group {
   margin-bottom: 0px;
+}
+
+.button-bar {
+  padding: 5px;
 }

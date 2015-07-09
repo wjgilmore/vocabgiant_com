@@ -17,10 +17,9 @@ ListActions.loadLists.listen(function() {
     });
 });
 
-ListActions.loadList.listen(function() {
+ListActions.loadList.listen(function(listId) {
   var thisAction = this;
-  console.log('in loadList');
-  request.get('/lists/:id')
+  request.get('/lists/' + listId)
     .end(function(err, res) {
       if (err) { return thisAction.failed(err) }
       thisAction.completed(res);
