@@ -30,6 +30,8 @@ You'll also want to begin watching your application using Gulp so the JS can be 
 
 	$ gulp watch
 
+Finally, keep in mind parts of this app are currently broken! This is very much a prototype, and I'm furiously adding new features to it while writing the book. I didn't want to wait for perfection to release it, since I figured quite a few interested developers could begin learning at least something from it now.
+
 ## Demo
 
 A (slow) Heroku-hosted demo is currently available at [http://blooming-temple-4225.herokuapp.com/](http://blooming-temple-4225.herokuapp.com/). Over the next few days I'll migrate it to the VocabGiant.com URL and ensure it has proper resources to run responsively.
