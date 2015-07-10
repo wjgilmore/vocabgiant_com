@@ -1,6 +1,107 @@
 db.dropDatabase();
 
 db.lists.insert(
+  { name: 'Colors', 
+    language: 'Italian',
+    terms: [
+      {
+        origin: 'arancione',
+        translation: 'orange'
+      },
+      {
+        origin: "azzurro/a",
+        translation: 'blue'
+      },
+      {
+        origin: "bianco / bianca",
+        translation: 'white'
+      },
+      {
+        origin: 'giallo / gialla',
+        translation: 'yellow'
+      },
+      {
+        origin: 'marrone',
+        translation: 'brown'
+      },
+      {
+        origin: 'grigio',
+        translation: 'gray'
+      },
+      {
+        origin: 'rosso / rossa',
+        translation: 'gray'
+      },
+      {
+        origin: 'verde',
+        translation: 'green'
+      },
+      {
+        origin: 'nero / nera',
+        translation: 'black'
+      }
+
+    ]
+  }
+  )
+
+db.lists.insert(
+  { name: 'Family', 
+    language: 'Italian',
+    terms: [
+      {
+        origin: 'la famiglia',
+        translation: 'Family'
+      },
+      {
+        origin: "il fratello",
+        translation: 'brother'
+      },
+      {
+        origin: "la sorella",
+        translation: 'sister'
+      },
+      {
+        origin: 'la madre',
+        translation: 'mother'
+      },
+      {
+        origin: 'il padre',
+        translation: 'father'
+      },
+      {
+        origin: 'il nonno',
+        translation: 'grandfather'
+      },
+      {
+        origin: 'la nonna',
+        translation: 'grandmother'
+      },
+      {
+        origin: 'il cugino / la cugina',
+        translation: 'cousin'
+      },
+      {
+        origin: 'lo zio',
+        translation: 'uncle'
+      },
+      {
+        origin: 'la zia',
+        translation: 'aunt'
+      },
+      {
+        origin: 'il marito',
+        translation: 'husband'
+      },
+      {
+        origin: 'la moglie',
+        translation: 'wife'
+      }
+    ]
+  }
+  )
+
+db.lists.insert(
   { name: 'Seasons', 
     language: 'Italian',
     terms: [

@@ -9,7 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wjgilmore/vocabgiant.git"
+    "url": "https://github.com/wjgilmore/vocabgiant.git",
+    "test": "jest"
   },
   "keywords": [
     "vocabulary",
@@ -39,13 +40,29 @@
   },
   "devDependencies": {
     "babel-eslint": "^3.1.17",
+    "babel-jest": "^5.3.0",
     "babelify": "^6.1.2",
     "browserify": "^10.2.3",
     "eslint": "^0.23.0",
     "eslint-plugin-react": "^2.5.2",
     "gulp": "^3.9.0",
     "gulp-util": "^3.0.5",
+    "jest-cli": "^0.4.15",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.2.2"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": ["<rootDir>/node_modules/react"],
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6",
+      "jsx"
+    ]
   }
 }

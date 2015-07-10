@@ -4,6 +4,8 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
+var List = require('models/List.js');
+
 mongoose.connect(process.env.MONGOLAB_URI, function(err) {
     if(err) {
         console.log('MongoDB connection error', err);
@@ -11,11 +13,6 @@ mongoose.connect(process.env.MONGOLAB_URI, function(err) {
         console.log('MongoDB connection successful');
     }
 });
-
-var List = mongoose.model('List', new mongoose.Schema({
-  name: String,
-  language: String
-}));
 
 var app = express();
 
