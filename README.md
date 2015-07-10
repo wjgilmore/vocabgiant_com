@@ -34,7 +34,7 @@ Finally, keep in mind parts of this app are currently broken! This is very much 
 
 ## Demo
 
-A (slow) Heroku-hosted demo is currently available at [http://blooming-temple-4225.herokuapp.com/](http://blooming-temple-4225.herokuapp.com/). Over the next few days I'll migrate it to the VocabGiant.com URL and ensure it has proper resources to run responsively.
+A (slow) Heroku-hosted demo is currently available at [http://blooming-temple-4225.herokuapp.com/](http://blooming-temple-4225.herokuapp.com/). Over the next few days I'll migrate it to the VocabGiant.com URL and ensure it has proper resources to run responsively. Keep in mind parts of this demo are unapologetically broken. It's optimized for phones, so it looks weird on a desktop.
 
 ## Questions?
 
