@@ -32,9 +32,18 @@ You'll also want to begin watching your application using Gulp so the JS can be 
 
 Finally, keep in mind parts of this app are currently broken! This is very much a prototype, and I'm furiously adding new features to it while writing the book. I didn't want to wait for perfection to release it, since I figured quite a few interested developers could begin learning at least something from it now.
 
+## The TODO List
+
+This is the "I am embarrassed to release this" release. Heck, I haven't even started tagging it yet. Currently you'll find it contains a few example lists, and you can use the sweet swipe feature to review a list, and that's about it. I'm planning on incorporating *a ton* of cool new features over the next few weeks, including:
+
+* **Quizzes**: This feature is the most pressing priority. Users will be quizzed on their list comprehension, and the app will track scores in real-time.
+* **User Accounts**: Users will be able to create accounts and manage their own vocabulary lists.
+* **Administration Interface**: An administrator will be able to add lists and do other administrative stuff.
+* **Eye Candy and Other Interactive Features**: Because we like whizbang stuff.
+
 ## Demo
 
-A (slow) Heroku-hosted demo is currently available at [http://blooming-temple-4225.herokuapp.com/](http://blooming-temple-4225.herokuapp.com/). Over the next few days I'll migrate it to the VocabGiant.com URL and ensure it has proper resources to run responsively. Keep in mind parts of this demo are unapologetically broken. It's optimized for phones, so it looks weird on a desktop.
+A (slow) Heroku-hosted demo is currently available at [http://blooming-temple-4225.herokuapp.com/](http://blooming-temple-4225.herokuapp.com/). Over the next few days I'll migrate it to the VocabGiant.com URL and ensure it has proper resources to run responsively. Keep in mind parts of this demo are broken. :-) Also, it's optimized for phones, so it looks weird on a desktop.
 
 ## Questions?
 

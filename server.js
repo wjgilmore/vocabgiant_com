@@ -4,14 +4,14 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-var List = require('models/List.js');
+var List = require('./database/models/List.js');
 
 mongoose.connect(process.env.MONGOLAB_URI, function(err) {
-    if(err) {
-        console.log('MongoDB connection error', err);
-    } else {
-        console.log('MongoDB connection successful');
-    }
+  if(err) {
+      console.log('MongoDB connection error', err);
+  } else {
+      console.log('MongoDB connection successful');
+  }
 });
 
 var app = express();

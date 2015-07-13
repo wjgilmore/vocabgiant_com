@@ -6,7 +6,7 @@ var urlSlugs = require('mongoose-url-slugs');
 
 var ListSchema = new mongoose.Schema({
 	name: { type: String, required: true },
-	language: { type: Number, required: true },
+	language: { type: String, required: true },
 });
 
 ListSchema.plugin(urlSlugs('name'));

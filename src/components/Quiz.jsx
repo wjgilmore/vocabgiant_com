@@ -32,8 +32,7 @@ var Quiz = React.createClass({
         };
 
         var textInputStyle = {
-          border: '0px',
-          borderBottom: '2px solid black',
+          border: '1px',
           borderStyle: 'solid',
           margin: '3px'
         };
@@ -49,15 +48,19 @@ var Quiz = React.createClass({
         return (
             <div style={divStyle}>
             <p>
-            {score} / {termsCount}
+            Your Score: {score} / {termsCount}
             </p>
             <ReactSwipe continuous={false}>
             {reviewItems}
             </ReactSwipe>
-            <input style={textInputStyle} type="text" name="origin" size="1" />
-            <input style={textInputStyle} type="text" name="origin" size="1" />
-
-            <input style={textInputStyle} type="text" name="origin" size="1" />
+            <div className="row">
+            <div className="col-xs-6 col-xs-offset-3">
+            <input style={textInputStyle} className="form-control" type="text" name="origin" />
+            <button type="submit" className="btn btn-info">SUBMIT</button>
+            &nbsp;
+            <button type="submit" className="btn btn-info">SKIP</button>
+            </div>
+            </div>
             </div>
         );
 

@@ -4,7 +4,8 @@ var request = require('superagent');
 
 var ListActions = Reflux.createActions({
     'loadLists': {children: ['completed','failed']},
-    'loadList': {children: ['completed','failed']}
+    'loadList': {children: ['completed','failed']},
+    'filterList': {}
 });
  
 ListActions.loadLists.listen(function() {

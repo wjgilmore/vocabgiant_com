@@ -182,6 +182,10 @@ db.lists.insert(
         translation: 'April'
       },
       {
+        origin: 'maggio',
+        translation: 'May'
+      },
+      {
         origin: 'giugno',
         translation: 'June'
       },
@@ -207,6 +211,98 @@ db.lists.insert(
       },
       {
         origin: 'dicembre',
+        translation: 'December'
+      }
+    ]
+  }
+  )
+
+db.lists.insert(
+  { name: 'Days of the Week', 
+    language: 'French',
+    terms: [
+      {
+        origin: 'lundi',
+        translation: 'Monday'
+      },
+      {
+        origin: 'mardi',
+        translation: 'Tuesday'
+      },
+      {
+        origin: 'mercredi',
+        translation: 'Wednesday'
+      },
+      {
+        origin: 'jeudi',
+        translation: 'Thursday'
+      },
+      {
+        origin: 'vendredi',
+        translation: 'Friday'
+      },
+      {
+        origin: 'samedi',
+        translation: 'Saturday'
+      },
+      {
+        origin: 'dimanche',
+        translation: 'Sunday'
+      },
+    ]
+  }
+  )
+
+db.lists.insert(
+  { name: 'Months of the Year', 
+    language: 'French',
+    terms: [
+      {
+        origin: 'janvier',
+        translation: 'January'
+      },
+      {
+        origin: 'février',
+        translation: 'February'
+      },
+      {
+        origin: 'mars',
+        translation: 'March'
+      },
+      {
+        origin: 'avril',
+        translation: 'April'
+      },
+      {
+        origin: 'mai',
+        translation: 'May'
+      },
+      {
+        origin: 'juin',
+        translation: 'June'
+      },
+      {
+        origin: 'juillet',
+        translation: 'July'
+      },
+      {
+        origin: 'août',
+        translation: 'August'
+      },
+      {
+        origin: 'septembre',
+        translation: 'September'
+      },
+      {
+        origin: 'octobre',
+        translation: 'October'
+      },
+      {
+        origin: 'novembre',
+        translation: 'November'
+      },
+      {
+        origin: 'décembre',
         translation: 'December'
       }
     ]
