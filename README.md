@@ -20,7 +20,7 @@ Next, create a local MongoDB database (named whatever you please), and then crea
 
 If you have a look inside `server.js` you'll see this `MONGOLAB_URI` environment variable is used to connect to MongoDB. Next import the database seeds into your newly created database:
 
-	$ mongo localhost:27017/dev_vocabgiant_com database/seeds/seeds.js
+	$ mongo localhost/dev_vocabgiant_com database/seeds/seeds.js
 
 Finally, boot the application:
 
