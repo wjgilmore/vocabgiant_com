@@ -24,7 +24,7 @@ var Lists = React.createClass({
     this.setState({
         filterTerm: filterTerm
     });
-console.log(this.state.filterTerm);
+
     ListActions.filterList(this.state.filterTerm);
   },
 
