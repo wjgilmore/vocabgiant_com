@@ -30,7 +30,7 @@ db.lists.insert(
       },
       {
         origin: 'rosso / rossa',
-        translation: 'gray'
+        translation: 'red'
       },
       {
         origin: 'verde',

@@ -1,9 +1,7 @@
 var Reflux = require('reflux');
 
-var request = require('superagent');
-
 var QuizActions = Reflux.createActions({
-    'manageScore': {}
+    'moveAndTally': {}
 });
  
 module.exports = QuizActions;

@@ -39,7 +39,7 @@ This is the "I am embarrassed to release this" release. Heck, I haven't even sta
 * **Quizzes**: This feature is the most pressing priority. Users will be quizzed on their list comprehension, and the app will track scores in real-time.
 * **User Accounts**: Users will be able to create accounts and manage their own vocabulary lists.
 * **Administration Interface**: An administrator will be able to add lists and do other administrative stuff.
-* **Eye Candy and Other Interactive Features**: Because we like whizbang stuff.
+* **Eye Candy and Other Interactive Features**: Because we like getting all whizbangy and stuff.
 
 ## Demo
 

@@ -47,8 +47,7 @@ var ListsStore = Reflux.createStore({
   onListCompleted: function(res) {
     data.list = JSON.parse(res.text);
     this.trigger(data);
-  }
-  ,
+  },
 
   getInitialState: function() {
     return data;
