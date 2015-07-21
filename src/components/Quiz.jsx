@@ -24,12 +24,12 @@ var Quiz = React.createClass({
 
     updateScoreAndPosition: function() {
 
-      var quizItem = this.refs.quizItem.getDOMNode().getAttribute('data-id');
+      var quizQuestion = this.refs.quizItem.getDOMNode().getAttribute('data-id');
       var quizAnswer = this.refs.quizAnswer.getDOMNode().value;
 
-      QuizActions.moveAndTally(quizItem, quizAnswer);
+      QuizActions.moveAndTally(quizQuestion, quizAnswer);
 
-      //this.refs.quizSwipe.swipe.next();
+      this.refs.quizAnswer.getDOMNode().value = "";
 
     },
 
@@ -41,7 +41,7 @@ var Quiz = React.createClass({
 
         var divStyle = {
           textAlign: 'center',
-          marginTop: '50%'
+          marginTop: '5%'
         };
 
         var textInputStyle = {
@@ -61,7 +61,7 @@ var Quiz = React.createClass({
 
         return (
             <div style={divStyle}>
-            <p>
+            <p className="score-leader">
             Your Score: {this.state.score} / {termsCount}
             </p>
             {quizItem}

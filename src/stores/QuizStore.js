@@ -16,6 +16,7 @@ var QuizStore = Reflux.createStore({
   },
 
   onMoveAndTally: function(quizItem, quizAnswer) {
+
     data.listIndex++;
 
     if (quizItem == quizAnswer) {
@@ -27,7 +28,6 @@ var QuizStore = Reflux.createStore({
   },
 
   getInitialState: function() {
-    console.log("initializing quiz");
     return data;
   }
 

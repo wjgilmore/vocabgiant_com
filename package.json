@@ -24,6 +24,7 @@
   "homepage": "https://github.com/wjgilmore/vocabgiant",
   "dependencies": {
     "body-parser": "^1.12.4",
+    "bootstrap": "^3.3.5",
     "express": "^4.12.4",
     "express-jsonstream": "0.0.3",
     "lodash": "^3.10.0",
@@ -47,6 +48,7 @@
     "eslint-plugin-react": "^2.7.0",
     "gulp": "^3.9.0",
     "gulp-eslint": "^0.15.0",
+    "gulp-less": "^3.0.3",
     "gulp-param": "^0.6.3",
     "gulp-util": "^3.0.6",
     "jest-cli": "^0.4.15",

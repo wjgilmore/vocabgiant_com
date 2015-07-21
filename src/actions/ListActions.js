@@ -10,7 +10,6 @@ var ListActions = Reflux.createActions({
  
 ListActions.loadLists.listen(function() {
   var thisAction = this;
-  console.log('in loadLists');
   request.get('/lists')
     .end(function(err, res) {
       if (err) { return thisAction.failed(err) }

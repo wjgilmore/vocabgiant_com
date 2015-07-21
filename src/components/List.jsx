@@ -22,18 +22,16 @@ var List = React.createClass({
     	var terms = this.state.list.terms;
 
 	    var listItems = _.map(terms, function(term) {
-	      return <Link key={term.translation} to="list" params={{id: term.translation}}>
-	        <li className="list-group-item">
+	        return <li key={term.origin} className="list-group-item">
 	          <h4 className="list-group-item-heading">{term.origin}</h4>
 	          <p className="list-group-item-text">{term.translation}</p>
 	        </li>
-	      </Link>
 	    });
 
 	    return (
 	     <div>
 
-	     <h1>{this.state.list.name} ({this.state.list.language})</h1>
+	    <h1>{this.state.list.name} ({this.state.list.language})</h1>
 
 		<div className="row button-bar">
 		<div className="col-sm-10 col-sm-offset-2">
