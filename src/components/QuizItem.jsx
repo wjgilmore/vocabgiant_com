@@ -5,6 +5,10 @@ var QuizActions = require('../actions/QuizActions');
 
 var QuizItem = React.createClass({
 
+    componentDidMount: function() {
+      this.refs.quizAnswer.getDOMNode().focus();
+    },
+
     updateScoreAndPosition: function() {
 
       var quizQuestion = this.refs.quizItem.getDOMNode().getAttribute('data-id');
@@ -16,6 +20,8 @@ var QuizItem = React.createClass({
 
       // Clear the text field
       this.refs.quizAnswer.getDOMNode().value = "";
+//      React.findDOMNode(this.refs.quizAnswer).focus();
+      //this.refs.quizAnswer.getDOMNode().focus();
 
     },
 
