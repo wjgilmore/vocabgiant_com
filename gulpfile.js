@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var less = require('gulp-less');
 var gutil = require('gulp-util');
 var eslint = require('gulp-eslint');
 var gulp_param = require('gulp-param')(require('gulp'), process.argv);
@@ -12,6 +13,12 @@ gulp.task('lint', function() {
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failOnError());
+});
+
+gulp.task('build-less', function(){
+  return gulp.src(['src/css/*.less'])
+    .pipe(less())
+    .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('build', function(watch) {  
