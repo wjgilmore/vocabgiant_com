@@ -13,11 +13,11 @@ db.lists.insert(
         translation: 'blue'
       },
       {
-        origin: "bianco / bianca",
+        origin: "bianco/a",
         translation: 'white'
       },
       {
-        origin: 'giallo / gialla',
+        origin: 'giallo/a',
         translation: 'yellow'
       },
       {
@@ -29,7 +29,7 @@ db.lists.insert(
         translation: 'gray'
       },
       {
-        origin: 'rosso / rossa',
+        origin: 'rosso/a',
         translation: 'red'
       },
       {
@@ -37,7 +37,7 @@ db.lists.insert(
         translation: 'green'
       },
       {
-        origin: 'nero / nera',
+        origin: 'nero/a',
         translation: 'black'
       }
 
